@@ -82,10 +82,10 @@
 <meta name="description" content="公司的 web app 中，下拉列表对象（boundlist）没有可用于识别的 unique 的 feature。12345&amp;lt;div class=&amp;quot;x-boundlist x-boundlist-floating x-layer x-boundlist-default x-border-box x-boundlist-above&amp;quot; style=&amp;quot;width: 2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试实例总结 No.01">
-<meta property="og:url" content="http://yoursite.com/2017/12/14/测试实例总结-01/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/12/18/测试实例总结-01/index.html">
 <meta property="og:site_name" content="Lawrence&#39;s Blog">
 <meta property="og:description" content="公司的 web app 中，下拉列表对象（boundlist）没有可用于识别的 unique 的 feature。12345&amp;lt;div class=&amp;quot;x-boundlist x-boundlist-floating x-layer x-boundlist-default x-border-box x-boundlist-above&amp;quot; style=&amp;quot;width: 2">
-<meta property="og:updated_time" content="2017-12-14T21:13:51.417Z">
+<meta property="og:updated_time" content="2017-12-18T16:06:54.925Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试实例总结 No.01">
 <meta name="twitter:description" content="公司的 web app 中，下拉列表对象（boundlist）没有可用于识别的 unique 的 feature。12345&amp;lt;div class=&amp;quot;x-boundlist x-boundlist-floating x-layer x-boundlist-default x-border-box x-boundlist-above&amp;quot; style=&amp;quot;width: 2">
@@ -118,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/14/测试实例总结-01/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/18/测试实例总结-01/"/>
 
 
 
@@ -231,7 +231,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/14/测试实例总结-01/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/测试实例总结-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lawrence Young">
@@ -260,8 +260,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T16:13:51-05:00">
-                2017-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-18T11:06:54-05:00">
+                2017-12-18
               </time>
             
 
@@ -270,6 +270,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/测试实例/" itemprop="url" rel="index">
+                    <span itemprop="name">测试实例</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -310,7 +332,7 @@
 <p><em>(source: <a href="https://developer.mozilla.org/docs/Web/CSS/unset" target="_blank" rel="noopener">https://developer.mozilla.org/docs/Web/CSS/unset</a> )</em></p>
 <p>Note also that <code>display:revert</code> is currently being developed.</p>
 </blockquote>
-<p>但是以上方法在这次实践中没有作用。所以选择在 xpath 中加入以下：<code>not(contains(@style, &#39;display: none;&#39;)</code></p>
+<p>但是以上方法在实际运行中没有作用。所以选择在 xpath 中加入以下：<code>not(contains(@style, &#39;display: none;&#39;)</code></p>
 <p>完整 xpath 如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//*[contains(@class, &apos;x-boundlist&apos;) and not(contains(@style, &apos;display: none;&apos;))]//*[contains(@class, &apos;x-boundlist-list-ct&apos;)]//*[contains(@class, &apos;x-list-plain&apos;)]</span><br></pre></td></tr></table></figure></p>
 <p>另， <a href="http://stackoverflow.com/questions/17630945/is-there-an-opposite-to-displaynone" target="_blank" rel="noopener">stackoverflow</a> 上关于这个问题的最高票答案：</p>
 <blockquote>
@@ -322,7 +344,7 @@
 <p>But there isn’t one value that’s the direct converse of <code>display:none</code> - just like there’s no one hair style that’s the opposite of “bald”.</p>
 </blockquote>
 <p>参考 <a href="http://stackoverflow.com/questions/16296490/how-to-handle-combo-boxes-of-extjs-in-selenium-webdriver" target="_blank" rel="noopener">stackoverflow</a> 上的问答， 完成最后function如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def click_boundlist_item(bound_list_obj, item_inner_text):</span><br><span class="line">    bound_list_obj.click()</span><br><span class="line">    xpath = &quot;//*[contains(@class, &apos;x-boundlist&apos;) and not(contains(@style, &apos;display: none;&apos;))]//*[contains(@class, &apos;x-boundlist-list-ct&apos;)]//*[contains(@class, &apos;x-list-plain&apos;)]&quot;</span><br><span class="line">    bound_list = driver.find_element_by_xpath(xpath)</span><br><span class="line">    options = list(bound_list.find_elements_by_tag_name(&apos;li&apos;))</span><br><span class="line">    for i in range(len(options)):</span><br><span class="line">        item = options[i]</span><br><span class="line">        if item_inner_text in item.get_attribute(&apos;innerText&apos;):</span><br><span class="line">            item.click()</span><br><span class="line">            break</span><br></pre></td></tr></table></figure></p>
-<p>其中，<code>options</code> 一行使用了 <code>.find_elements_by_tag_name()</code> 方法。 方法名是 <code>elements</code> 而不是 <code>element</code>。 此一类 <code>elements</code> 方法可以返回当前页面元素下的所有符合选择条件的子路径。返回类型是 list (python)。</p>
+<p>其中，<code>options</code> 一行使用了 <code>.find_elements_by_tag_name()</code> 方法。 方法名是 <code>elements</code> 而不是 <code>element</code>。 此一类 <code>elements</code> 方法可以返回当前页面元素下的所有符合选择条件的子路径。返回类型是 list 型(python)。</p>
 <p>Reference: <a href="https://selenium-python.readthedocs.io/locating-elements.html" target="_blank" rel="noopener">selenium-python docs</a></p>
 <p>改进：</p>
 <p>需要添加 exception handling。</p>
@@ -351,8 +373,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/14/无题之四/" rel="next" title="无题之四">
-                <i class="fa fa-chevron-left"></i> 无题之四
+              <a href="/2017/12/12/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -360,6 +382,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/18/无题之二/" rel="prev" title="无题之二">
+                无题之二 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -433,6 +459,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">Kategorien</span>
+                </a>
+              </div>
             
 
             

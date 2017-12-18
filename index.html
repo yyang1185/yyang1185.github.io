@@ -231,7 +231,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/14/测试实例总结-01/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/无题之四/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lawrence Young">
@@ -250,7 +250,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/14/测试实例总结-01/" itemprop="url">测试实例总结 No.01</a></h1>
+                <a class="post-title-link" href="/2017/12/18/无题之四/" itemprop="url">无题之四</a></h1>
         
 
         <div class="post-meta">
@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T16:13:51-05:00">
-                2017-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-18T11:07:05-05:00">
+                2017-12-18
               </time>
             
 
@@ -273,153 +273,27 @@
           </span>
 
           
-
-          
+            <span class="post-category" >
             
-          
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂文/" itemprop="url" rel="index">
+                    <span itemprop="name">杂文</span>
+                  </a>
+                </span>
 
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>公司的 web app 中，下拉列表对象（boundlist）没有可用于识别的 unique 的 feature。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;x-boundlist x-boundlist-floating x-layer x-boundlist-default x-border-box x-boundlist-above&quot; style=&quot;width: 245px; right: auto; left: 443px; top: 152px; height: auto; z-index: 19000;&quot; id=&quot;boundlist-2823&quot; tabindex=&quot;0&quot; componentid=&quot;boundlist-2823&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;boundlist-2823-listWrap&quot; data-ref=&quot;listWrap&quot; role=&quot;presentation&quot; class=&quot;x-boundlist-list-ct x-unselectable&quot; style=&quot;overflow: auto; height: auto;&quot;&gt;</span><br><span class="line">        &lt;ul id=&quot;boundlist-2823-listEl&quot; data-ref=&quot;listEl&quot; class=&quot;x-list-plain&quot;&gt;</span><br><span class="line">                &lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item x-boundlist-selected&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;0&quot; data-recordid=&quot;2125&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;None&lt;/div&gt;&lt;/li&gt;</span><br><span class="line">                &lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;1&quot; data-recordid=&quot;2126&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Scavenger [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;2&quot; data-recordid=&quot;2127&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Best Effort [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;3&quot; data-recordid=&quot;2128&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Bulk Data [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;4&quot; data-recordid=&quot;2129&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Critical Data [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;5&quot; data-recordid=&quot;2130&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Network Control [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;6&quot; data-recordid=&quot;2131&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Network Management [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;7&quot; data-recordid=&quot;2132&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;RTP/Voice/Video [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;8&quot; data-recordid=&quot;2133&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;High Priority [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;9&quot; data-recordid=&quot;2134&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Access Control Web Redirect&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
-<p>列表也没有对应的 <code>&lt;select&gt;</code> 部分，故而也无法使用 selenium 中的 Select 方法。</p>
-<p>后用 xpath 获取 boundlist 中所有选项，进行 <code>.click()</code> 操作。使用 xpath 锁定 boundlist element 的关键是利用 <code>display:none</code> 特征。</p>
-<p>尝试在已经被点开的 boundlist 中， 找到与 <code>display:none</code> 相对的特征。  关于这点，<a href="http://stackoverflow.com/questions/17630945/is-there-an-opposite-to-displaynone" target="_blank" rel="noopener">stackoverflow</a> 上相关词条首选建议如下：</p>
-<blockquote>
-<p>A true opposite to <code>display: none</code> there is not(yet).</p>
-<p>But <code>display: unset</code> is very close and works in most case.</p>
-<p>From <a href="https://developer.mozilla.org/docs/Web/CSS/unset" target="_blank" rel="noopener">MDN</a> :</p>
-<p>The unset CSS keyword is the combination of the initial and inherit keywords. Like these two other CSS-wide keywords, it can be applied to any CSS property, including the CSS shorthand all. This keyword resets the property to its inherited value if it inherits from its parent or to its initial value if not. In other words, it behaves like the inherit keyword in the first case and like the initial keyword in the second case.</p>
-<p><em>(source: <a href="https://developer.mozilla.org/docs/Web/CSS/unset" target="_blank" rel="noopener">https://developer.mozilla.org/docs/Web/CSS/unset</a> )</em></p>
-<p>Note also that <code>display:revert</code> is currently being developed.</p>
-</blockquote>
-<p>但是以上方法在这次实践中没有作用。所以选择在 xpath 中加入以下：<code>not(contains(@style, &#39;display: none;&#39;)</code></p>
-<p>完整 xpath 如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//*[contains(@class, &apos;x-boundlist&apos;) and not(contains(@style, &apos;display: none;&apos;))]//*[contains(@class, &apos;x-boundlist-list-ct&apos;)]//*[contains(@class, &apos;x-list-plain&apos;)]</span><br></pre></td></tr></table></figure></p>
-<p>另， <a href="http://stackoverflow.com/questions/17630945/is-there-an-opposite-to-displaynone" target="_blank" rel="noopener">stackoverflow</a> 上关于这个问题的最高票答案：</p>
-<blockquote>
-<p><code>display: none</code> doesn’t have a literal opposite like<code>visibility:hidden</code> does.</p>
-<p>The<code>visibility</code> property decides whether an element is visible or not. It therefore has two states (<code>visible</code> and <code>hidden</code>), which are opposite to each other.</p>
-<p>The<code>display</code> property, however, decides what layout rules an element will follow. There are several different kinds of rules for how elements will lay themselves out in CSS, so there are several different values (<code>block</code>, <code>inline</code>, <code>inline-block</code> etc — <a href="https://www.w3.org/TR/CSS2/visuren.html#display-prop" target="_blank" rel="noopener">see the documentation for these values here</a> ).</p>
-<p><code>display:none</code> removes an element from the page layout entirely, as if it wasn’t there.</p>
-<p>All other values for <code>display</code> cause the element to be a part of the page, so in a sense they’re all opposite to <code>display:none</code>.</p>
-<p>But there isn’t one value that’s the direct converse of <code>display:none</code> - just like there’s no one hair style that’s the opposite of “bald”.</p>
-</blockquote>
-<p>参考 <a href="http://stackoverflow.com/questions/16296490/how-to-handle-combo-boxes-of-extjs-in-selenium-webdriver" target="_blank" rel="noopener">stackoverflow</a> 上的问答， 完成最后function如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def click_boundlist_item(bound_list_obj, item_inner_text):</span><br><span class="line">    bound_list_obj.click()</span><br><span class="line">    xpath = &quot;//*[contains(@class, &apos;x-boundlist&apos;) and not(contains(@style, &apos;display: none;&apos;))]//*[contains(@class, &apos;x-boundlist-list-ct&apos;)]//*[contains(@class, &apos;x-list-plain&apos;)]&quot;</span><br><span class="line">    bound_list = driver.find_element_by_xpath(xpath)</span><br><span class="line">    options = list(bound_list.find_elements_by_tag_name(&apos;li&apos;))</span><br><span class="line">    for i in range(len(options)):</span><br><span class="line">        item = options[i]</span><br><span class="line">        if item_inner_text in item.get_attribute(&apos;innerText&apos;):</span><br><span class="line">            item.click()</span><br><span class="line">            break</span><br></pre></td></tr></table></figure></p>
-<p>其中，<code>options</code> 一行使用了 <code>.find_elements_by_tag_name()</code> 方法。 方法名是 <code>elements</code> 而不是 <code>element</code>。 此一类 <code>elements</code> 方法可以返回当前页面元素下的所有符合选择条件的子路径。返回类型是 list (python)。</p>
-<p>Reference: <a href="https://selenium-python.readthedocs.io/locating-elements.html" target="_blank" rel="noopener">selenium-python docs</a></p>
-<p>改进：</p>
-<p>需要添加 exception handling。</p>
-<p>可尝试运用 selenium 的 .isdisplayed 方法。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/14/无题之四/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lawrence Young">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lawrence's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/14/无题之四/" itemprop="url">无题之四</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+                
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T16:10:29-05:00">
-                2017-12-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
+            </span>
           
 
           
@@ -520,7 +394,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/14/伦敦 沦陷/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/伦敦 沦陷/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lawrence Young">
@@ -539,7 +413,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/14/伦敦 沦陷/" itemprop="url">Unbenannt</a></h1>
+                <a class="post-title-link" href="/2017/12/18/伦敦 沦陷/" itemprop="url">伦敦 沦陷</a></h1>
         
 
         <div class="post-meta">
@@ -551,8 +425,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T16:10:27-05:00">
-                2017-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-18T11:07:03-05:00">
+                2017-12-18
               </time>
             
 
@@ -561,6 +435,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂文/" itemprop="url" rel="index">
+                    <span itemprop="name">杂文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -643,7 +539,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/14/无题之三/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/无题/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lawrence Young">
@@ -662,7 +558,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/14/无题之三/" itemprop="url">无题之三</a></h1>
+                <a class="post-title-link" href="/2017/12/18/无题/" itemprop="url">无题</a></h1>
         
 
         <div class="post-meta">
@@ -674,8 +570,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T16:05:05-05:00">
-                2017-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-18T11:07:02-05:00">
+                2017-12-18
               </time>
             
 
@@ -684,6 +580,182 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂文/" itemprop="url" rel="index">
+                    <span itemprop="name">杂文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>“乡愁” 往往冠以 “淡淡的” 来形容</p>
+<p>于是我把手伸向两腿之间</p>
+<p>只感受到了“蛋蛋的” ， 并不见了 “乡愁”</p>
+<p>如上，本没有</p>
+<p>我太迷恋于权威，却无法追随</p>
+<p>因为一旦有一天我超越了你的屏障</p>
+<p>我就会成为长街上的坦克</p>
+<p>不同的是，这坦克会毫不犹豫的碾过你血肉的躯体</p>
+<p>直至下一个深渊</p>
+<p>梦中，我站在你身前</p>
+<p>急于知道</p>
+<p>“自己有没有严肃思考最基本问题的才能”</p>
+<p>没有答案</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/无题之三/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lawrence Young">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lawrence's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/18/无题之三/" itemprop="url">无题之三</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-18T11:07:00-05:00">
+                2017-12-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂文/" itemprop="url" rel="index">
+                    <span itemprop="name">杂文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -768,7 +840,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/14/无题之二/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/无题之二/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lawrence Young">
@@ -787,7 +859,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/14/无题之二/" itemprop="url">无题之二</a></h1>
+                <a class="post-title-link" href="/2017/12/18/无题之二/" itemprop="url">无题之二</a></h1>
         
 
         <div class="post-meta">
@@ -799,8 +871,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T15:55:54-05:00">
-                2017-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-18T11:06:59-05:00">
+                2017-12-18
               </time>
             
 
@@ -809,6 +881,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂文/" itemprop="url" rel="index">
+                    <span itemprop="name">杂文</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -904,7 +998,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/14/无题/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/18/测试实例总结-01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lawrence Young">
@@ -923,7 +1017,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/14/无题/" itemprop="url">无题</a></h1>
+                <a class="post-title-link" href="/2017/12/18/测试实例总结-01/" itemprop="url">测试实例总结 No.01</a></h1>
         
 
         <div class="post-meta">
@@ -935,8 +1029,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T14:56:59-05:00">
-                2017-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-18T11:06:54-05:00">
+                2017-12-18
               </time>
             
 
@@ -945,6 +1039,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/测试实例/" itemprop="url" rel="index">
+                    <span itemprop="name">测试实例</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -975,19 +1091,35 @@
       
         
           
-            <p>“乡愁” 往往冠以 “淡淡的” 来形容</p>
-<p>于是我把手伸向两腿之间</p>
-<p>只感受到了“蛋蛋的” ， 并不见了 “乡愁”</p>
-<p>如上，本没有</p>
-<p>我太迷恋于权威，却无法追随</p>
-<p>因为一旦有一天我超越了你的屏障</p>
-<p>我就会成为长街上的坦克</p>
-<p>不同的是，这坦克会毫不犹豫的碾过你血肉的躯体</p>
-<p>直至下一个深渊</p>
-<p>梦中，我站在你身前</p>
-<p>急于知道</p>
-<p>“自己有没有严肃思考最基本问题的才能”</p>
-<p>没有答案</p>
+            <p>公司的 web app 中，下拉列表对象（boundlist）没有可用于识别的 unique 的 feature。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;x-boundlist x-boundlist-floating x-layer x-boundlist-default x-border-box x-boundlist-above&quot; style=&quot;width: 245px; right: auto; left: 443px; top: 152px; height: auto; z-index: 19000;&quot; id=&quot;boundlist-2823&quot; tabindex=&quot;0&quot; componentid=&quot;boundlist-2823&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;boundlist-2823-listWrap&quot; data-ref=&quot;listWrap&quot; role=&quot;presentation&quot; class=&quot;x-boundlist-list-ct x-unselectable&quot; style=&quot;overflow: auto; height: auto;&quot;&gt;</span><br><span class="line">        &lt;ul id=&quot;boundlist-2823-listEl&quot; data-ref=&quot;listEl&quot; class=&quot;x-list-plain&quot;&gt;</span><br><span class="line">                &lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item x-boundlist-selected&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;0&quot; data-recordid=&quot;2125&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;None&lt;/div&gt;&lt;/li&gt;</span><br><span class="line">                &lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;1&quot; data-recordid=&quot;2126&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Scavenger [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;2&quot; data-recordid=&quot;2127&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Best Effort [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;3&quot; data-recordid=&quot;2128&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Bulk Data [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;4&quot; data-recordid=&quot;2129&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Critical Data [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;5&quot; data-recordid=&quot;2130&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Network Control [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;6&quot; data-recordid=&quot;2131&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Network Management [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;7&quot; data-recordid=&quot;2132&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;RTP/Voice/Video [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;8&quot; data-recordid=&quot;2133&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;High Priority [Static]&lt;/div&gt;&lt;/li&gt;&lt;li role=&quot;option&quot; unselectable=&quot;on&quot; class=&quot;x-boundlist-item&quot; tabindex=&quot;-1&quot; data-recordindex=&quot;9&quot; data-recordid=&quot;2134&quot; data-boundview=&quot;boundlist-2823&quot;&gt;&lt;div style=&quot;vertical-align:top;&quot;&gt; &lt;img src=&quot;/OneView/images/classofservice.gif&quot; class=&quot;icon&quot; align=&quot;left&quot;&gt;&amp;nbsp;Access Control Web Redirect&lt;/div&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>列表也没有对应的 <code>&lt;select&gt;</code> 部分，故而也无法使用 selenium 中的 Select 方法。</p>
+<p>后用 xpath 获取 boundlist 中所有选项，进行 <code>.click()</code> 操作。使用 xpath 锁定 boundlist element 的关键是利用 <code>display:none</code> 特征。</p>
+<p>尝试在已经被点开的 boundlist 中， 找到与 <code>display:none</code> 相对的特征。  关于这点，<a href="http://stackoverflow.com/questions/17630945/is-there-an-opposite-to-displaynone" target="_blank" rel="noopener">stackoverflow</a> 上相关词条首选建议如下：</p>
+<blockquote>
+<p>A true opposite to <code>display: none</code> there is not(yet).</p>
+<p>But <code>display: unset</code> is very close and works in most case.</p>
+<p>From <a href="https://developer.mozilla.org/docs/Web/CSS/unset" target="_blank" rel="noopener">MDN</a> :</p>
+<p>The unset CSS keyword is the combination of the initial and inherit keywords. Like these two other CSS-wide keywords, it can be applied to any CSS property, including the CSS shorthand all. This keyword resets the property to its inherited value if it inherits from its parent or to its initial value if not. In other words, it behaves like the inherit keyword in the first case and like the initial keyword in the second case.</p>
+<p><em>(source: <a href="https://developer.mozilla.org/docs/Web/CSS/unset" target="_blank" rel="noopener">https://developer.mozilla.org/docs/Web/CSS/unset</a> )</em></p>
+<p>Note also that <code>display:revert</code> is currently being developed.</p>
+</blockquote>
+<p>但是以上方法在实际运行中没有作用。所以选择在 xpath 中加入以下：<code>not(contains(@style, &#39;display: none;&#39;)</code></p>
+<p>完整 xpath 如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//*[contains(@class, &apos;x-boundlist&apos;) and not(contains(@style, &apos;display: none;&apos;))]//*[contains(@class, &apos;x-boundlist-list-ct&apos;)]//*[contains(@class, &apos;x-list-plain&apos;)]</span><br></pre></td></tr></table></figure></p>
+<p>另， <a href="http://stackoverflow.com/questions/17630945/is-there-an-opposite-to-displaynone" target="_blank" rel="noopener">stackoverflow</a> 上关于这个问题的最高票答案：</p>
+<blockquote>
+<p><code>display: none</code> doesn’t have a literal opposite like<code>visibility:hidden</code> does.</p>
+<p>The<code>visibility</code> property decides whether an element is visible or not. It therefore has two states (<code>visible</code> and <code>hidden</code>), which are opposite to each other.</p>
+<p>The<code>display</code> property, however, decides what layout rules an element will follow. There are several different kinds of rules for how elements will lay themselves out in CSS, so there are several different values (<code>block</code>, <code>inline</code>, <code>inline-block</code> etc — <a href="https://www.w3.org/TR/CSS2/visuren.html#display-prop" target="_blank" rel="noopener">see the documentation for these values here</a> ).</p>
+<p><code>display:none</code> removes an element from the page layout entirely, as if it wasn’t there.</p>
+<p>All other values for <code>display</code> cause the element to be a part of the page, so in a sense they’re all opposite to <code>display:none</code>.</p>
+<p>But there isn’t one value that’s the direct converse of <code>display:none</code> - just like there’s no one hair style that’s the opposite of “bald”.</p>
+</blockquote>
+<p>参考 <a href="http://stackoverflow.com/questions/16296490/how-to-handle-combo-boxes-of-extjs-in-selenium-webdriver" target="_blank" rel="noopener">stackoverflow</a> 上的问答， 完成最后function如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def click_boundlist_item(bound_list_obj, item_inner_text):</span><br><span class="line">    bound_list_obj.click()</span><br><span class="line">    xpath = &quot;//*[contains(@class, &apos;x-boundlist&apos;) and not(contains(@style, &apos;display: none;&apos;))]//*[contains(@class, &apos;x-boundlist-list-ct&apos;)]//*[contains(@class, &apos;x-list-plain&apos;)]&quot;</span><br><span class="line">    bound_list = driver.find_element_by_xpath(xpath)</span><br><span class="line">    options = list(bound_list.find_elements_by_tag_name(&apos;li&apos;))</span><br><span class="line">    for i in range(len(options)):</span><br><span class="line">        item = options[i]</span><br><span class="line">        if item_inner_text in item.get_attribute(&apos;innerText&apos;):</span><br><span class="line">            item.click()</span><br><span class="line">            break</span><br></pre></td></tr></table></figure></p>
+<p>其中，<code>options</code> 一行使用了 <code>.find_elements_by_tag_name()</code> 方法。 方法名是 <code>elements</code> 而不是 <code>element</code>。 此一类 <code>elements</code> 方法可以返回当前页面元素下的所有符合选择条件的子路径。返回类型是 list 型(python)。</p>
+<p>Reference: <a href="https://selenium-python.readthedocs.io/locating-elements.html" target="_blank" rel="noopener">selenium-python docs</a></p>
+<p>改进：</p>
+<p>需要添加 exception handling。</p>
+<p>可尝试运用 selenium 的 .isdisplayed 方法。</p>
 
           
         
@@ -1203,6 +1335,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">Kategorien</span>
+                </a>
+              </div>
             
 
             
