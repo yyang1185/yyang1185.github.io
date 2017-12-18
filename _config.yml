@@ -7,7 +7,7 @@ title: Lawrence's Blog
 subtitle:
 description: 寻章摘句老雕虫
 author: Lawrence Young
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -78,5 +78,6 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/yyang1185/yyang1185.github.io
+  # repo: https://github.com/yyang1185/yyang1185.github.io
+  repo: git@github.com:yyang1185/yyang1185.github.io
   branch: master
