@@ -34,5 +34,5 @@ sudo apt -y upgrade
 文中'答案'的链接中加入了锚点。链接可以直接定位答案在页面的位置并居中显示。参考[文章][3]
 
 [1]: https://stackoverflow.com/questions/24741996/how-to-upgrade-atom-editor-on-linux
-[2]: https://stackoverflow.com/questions/24741996/how-to-upgrade-atom-editor-on-linux#answer-26759982
+[2]: https://stackoverflow.com/questions/24741996/how-to-upgrade-atom-editor-on-linux#26759982
 [3]: http://blog.sina.com.cn/s/blog_a45997290101lesd.html
