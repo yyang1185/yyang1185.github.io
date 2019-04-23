@@ -31,13 +31,11 @@ sudo apt -y upgrade
 这种更新方法需先添加 apt repository: `sudo add-apt-repository -y ppa:webupd8team/atom`。因为安装 Atom 时就已经添加了这个 repository， 所以理论上虚拟机可以用这种方法更新 Atom。但并没有尝试。
 
 另：
-文中[答案][2]的链接中加入了锚点。链接可以直接定位答案在页面的位置并居中显示。参考[文章][3]
-
-
+文中[答案][2]的链接中加入了锚点。链接可以直接定位答案在页面的位置并居中显示。参考[文章][3]。
+<br/>
 04-02 Updates:
 在最近一次的更新后，Atom 的 Updates 在更新 package 时经常出现错误导致无法更新。但是通过上文中的 `apm upgrade --confirm false`可以避免这些错误并且成功更新。更新时需要 root 权限（sudo）。
-
-
+<br/>
 04-18-2019 Updates:
 Atom 在 Linux 系统更新 packages 时， 经常会出现错误：
 ~~~~{bash}
